@@ -1,8 +1,20 @@
 # esm-forced-om2
 
-Scripts to apply ACCESS-ESM model output as forcing to ACCESS-OM2. 
+Scripts to apply ACCESS-ESM model output as forcing to ACCESS-OM2, based on JRA55-do reanalysis forced runs. 
+* Eg_atm_forcing_w_ESM1p5.ipynb : reformat UM variables to be read by OM2
+* Eg_make_friver_variable.ipynb : reformat ESM ocean runoff data for runoff and calving input
+* Eg_ocean_restart_ESMtoOM.ipynb : interpolate ESM ocean temp and salt restart file to OM2 vertical grid.
 
 Config file for ACCESS-OM2 with accomodations for the ESM forcing are here: https://github.com/ongqingyee/1deg_esm1p5_multiyrtest. 
+
+See ACCESS-Hive and ERA forced run issues for discussion:
+* https://github.com/COSIMA/access-om2/issues/242
+* https://forum.access-hive.org.au/t/forcing-access-om2-using-esm1-5-data/4349
+
+#### Runoff and calving forcing
+
+Runoff: extract ```friver``` variable from ESM ocean output and interpolate to JRA grid
+Calving: blank forcing file with same dimensions as JRA
 
 #### Mapping of JRA55-do variables to UM atmospheric variables
 
