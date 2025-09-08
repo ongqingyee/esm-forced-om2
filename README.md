@@ -13,8 +13,12 @@ See ACCESS-Hive and ERA forced run issues for discussion:
 
 #### Runoff and calving forcing
 
-Runoff: extract ```friver``` variable from ESM ocean output and interpolate to JRA grid
-Calving: blank forcing file with same dimensions as JRA
+* Runoff: extract ```friver``` variable from ESM ocean output and interpolate to JRA grid
+* Calving: blank forcing file with same dimensions as JRA
+
+#### Remapping UM to MOM
+
+Documentation for generating remapping files in progress. 
 
 #### Mapping of JRA55-do variables to UM atmospheric variables
 
